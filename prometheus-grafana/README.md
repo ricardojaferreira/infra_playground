@@ -63,3 +63,8 @@ Stop and remove the containers. Use `-v` to remove the volumes if looking to era
 ```
 $ docker-compose down -v
 ```
+
+
+### Infrastructure model
+
+![Insfrastructure model](.infragenie/infrastructure_model.png)
