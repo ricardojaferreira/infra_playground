@@ -1,5 +1,16 @@
 services:
-  prometheus:
+  prometheus-frontend:
+    image: prom/prometheus
+    container_name: prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - 9091:9091
+    restart: unless-stopped
+    volumes:
+      - ./prometheus:/etc/prometheus
+      - prom_data:/prometheus
+  prometheus-backend:
     image: prom/prometheus
     container_name: prometheus
     command:
@@ -10,11 +21,20 @@ services:
     volumes:
       - ./prometheus:/etc/prometheus
       - prom_data:/prometheus
+  grafana-frontend:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - 4000:5000
+    restart: unless-stopped
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=grafana
   grafana-backend:
     image: grafana/grafana
     container_name: grafana
     ports:
-      - 4000:3000
+      - 4000:5000
     restart: unless-stopped
     environment:
       - GF_SECURITY_ADMIN_USER=admin
