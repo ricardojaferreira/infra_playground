@@ -1,5 +1,4 @@
 SOMETHING
 
-### Infrastructure model
+Some more content in this Readme file
 
-![Insfrastructure model](.infragenie/infrastructure_model.png)
