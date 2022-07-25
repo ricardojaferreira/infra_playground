@@ -33,17 +33,20 @@
               "parent_id": "183d92d154ac6bec7e89cf1fdc3162f8",
               "key": "image",
               "value": "prom/prometheus",
-              "changes": false
+              "changes": false,
+              "class": "ComponentProperty",
             },
             {
               "id": "11d94561168e32205186f01ab5f3dd21",
               "parent_id": "183d92d154ac6bec7e89cf1fdc3162f8",
               "key": "restart",
               "value": "unless-stopped",
-              "changes": false
+              "changes": false,
+              "class": "ComponentProperty",
             }
           ],
-          "changed": true
+          "changed": true,
+          "class": "Component",
         }
       ],
       "ports": [],
@@ -60,12 +63,12 @@
               "parent_id": "46253e95d627348df80552d24de8462f",
               "label": "9091",
               "changed": false,
-              "py_class": "api.util.plantuml.Port"
+              "class": "Port"
             }
           ],
           "full_representation": false,
           "changed": false,
-          "py_class": "api.util.plantuml.Package"
+          "class": "Package"
         },
         {
           "id": "35e51a7e9aa39460388a764868a555ce",
@@ -79,7 +82,7 @@
               },
               "name": "/etc/prometheus",
               "changed": false,
-              "py_class": "api.util.plantuml.Artifact"
+              "py_class": "Artifact"
             },
             {
               "id": "c6588295fa58aab4d85a48661909e6da",
@@ -88,17 +91,17 @@
               },
               "name": "/prometheus",
               "changed": false,
-              "py_class": "api.util.plantuml.Artifact"
+              "py_class": "Artifact"
             }
           ],
           "ports": [],
           "full_representation": false,
           "changed": false,
-          "py_class": "api.util.plantuml.Package"
+          "py_class": "Package"
         }
       ],
       "changed": true,
-      "py_class": "api.util.plantuml.Node"
+      "class": "Node"
     },
     "183d92d154ac6bec7e89cf1fdc3162f8": {
       "id": "183d92d154ac6bec7e89cf1fdc3162f8",
@@ -110,17 +113,20 @@
           "parent_id": "183d92d154ac6bec7e89cf1fdc3162f8",
           "key": "image",
           "value": "prom/prometheus",
-          "changes": false
+          "changes": false,
+          class: "ComponentProperty",
         },
         {
           "id": "11d94561168e32205186f01ab5f3dd21",
           "parent_id": "183d92d154ac6bec7e89cf1fdc3162f8",
           "key": "restart",
           "value": "unless-stopped",
-          "changes": false
+          "changes": false,
+          "class": "ComponentProperty",
         }
       ],
-      "changed": true
+      "changed": true,
+      "class": "Component",
     },
     "c70a59dd4a327d67d119eac8866e8e27": {
       "id": "c70a59dd4a327d67d119eac8866e8e27",
@@ -133,20 +139,20 @@
           "parent_id": "c70a59dd4a327d67d119eac8866e8e27",
           "label": "2020",
           "changed": true,
-          "py_class": "api.util.plantuml.Port"
+          "class": "Port"
         }
       ],
       "artifacts": [],
       "packages": [],
       "changed": true,
-      "py_class": "api.util.plantuml.Node"
+      "class": "Node"
     },
     "189a1aaf577afb0c48e43ce87e6ec40e": {
       "id": "189a1aaf577afb0c48e43ce87e6ec40e",
       "parent_id": "c70a59dd4a327d67d119eac8866e8e27",
       "label": "2020",
       "changed": true,
-      "py_class": "api.util.plantuml.Port"
+      "class": "Port"
     },
     "8df10e20120c430eabbed56aff4fce2f": {
       "id": "8df10e20120c430eabbed56aff4fce2f",
@@ -156,7 +162,7 @@
       "connector_type": "-",
       "label": "",
       "changed": true,
-      "py_class": "api.util.plantuml.Connector"
+      "class": "Connector"
     }
   }
 }
