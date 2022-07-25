@@ -83,18 +83,14 @@
                "artifacts":[
                   {
                      "id":"81830505e50558d4d34098372db95f8f",
-                     "parent_id":{
-                        "py/id":19
-                     },
+                     "parent_id": "35e51a7e9aa39460388a764868a555ce",
                      "name":"/etc/prometheus",
                      "changed":false,
                      "class":"Artifact"
                   },
                   {
                      "id":"c6588295fa58aab4d85a48661909e6da",
-                     "parent_id":{
-                        "py/id":19
-                     },
+                     "parent_id": "35e51a7e9aa39460388a764868a555ce",
                      "name":"/prometheus",
                      "changed":false,
                      "class":"Artifact"
