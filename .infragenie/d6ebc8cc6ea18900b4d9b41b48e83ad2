@@ -34,7 +34,7 @@
                      "key":"image",
                      "value":"prom/prometheus",
                      "changes":false,
-                     "class":"ComponentProperty"
+                     "py_class":"ComponentProperty"
                   },
                   {
                      "id":"11d94561168e32205186f01ab5f3dd21",
@@ -42,11 +42,11 @@
                      "key":"restart",
                      "value":"unless-stopped",
                      "changes":false,
-                     "class":"ComponentProperty"
+                     "py_class":"ComponentProperty"
                   }
                ],
                "changed":true,
-               "class":"Component"
+               "py_class":"Component"
             }
          ],
          "ports":[
@@ -69,12 +69,12 @@
                      "parent_id":"46253e95d627348df80552d24de8462f",
                      "label":"9091",
                      "changed":false,
-                     "class":"Port"
+                     "py_class":"Port"
                   }
                ],
                "full_representation":false,
                "changed":false,
-               "class":"Package"
+               "py_class":"Package"
             },
             {
                "id":"35e51a7e9aa39460388a764868a555ce",
@@ -86,14 +86,14 @@
                      "parent_id": "35e51a7e9aa39460388a764868a555ce",
                      "name":"/etc/prometheus",
                      "changed":false,
-                     "class":"Artifact"
+                     "py_class":"Artifact"
                   },
                   {
                      "id":"c6588295fa58aab4d85a48661909e6da",
                      "parent_id": "35e51a7e9aa39460388a764868a555ce",
                      "name":"/prometheus",
                      "changed":false,
-                     "class":"Artifact"
+                     "py_class":"Artifact"
                   }
                ],
                "ports":[
@@ -101,7 +101,7 @@
                ],
                "full_representation":false,
                "changed":false,
-               "class":"Package"
+               "py_class":"Package"
             }
          ],
          "changed":true,
@@ -118,7 +118,7 @@
                "key":"image",
                "value":"prom/prometheus",
                "changes":false,
-               "class":"ComponentProperty"
+               "py_class":"ComponentProperty"
             },
             {
                "id":"11d94561168e32205186f01ab5f3dd21",
@@ -126,11 +126,11 @@
                "key":"restart",
                "value":"unless-stopped",
                "changes":false,
-               "class":"ComponentProperty"
+               "py_class":"ComponentProperty"
             }
          ],
          "changed":true,
-         "class":"Component"
+         "py_class":"Component"
       },
       "c70a59dd4a327d67d119eac8866e8e27":{
          "id":"c70a59dd4a327d67d119eac8866e8e27",
@@ -145,7 +145,7 @@
                "parent_id":"c70a59dd4a327d67d119eac8866e8e27",
                "label":"2020",
                "changed":true,
-               "class":"Port"
+               "py_class":"Port"
             }
          ],
          "artifacts":[
@@ -155,14 +155,14 @@
             
          ],
          "changed":true,
-         "class":"Node"
+         "py_class":"Node"
       },
       "189a1aaf577afb0c48e43ce87e6ec40e":{
          "id":"189a1aaf577afb0c48e43ce87e6ec40e",
          "parent_id":"c70a59dd4a327d67d119eac8866e8e27",
          "label":"2020",
          "changed":true,
-         "class":"Port"
+         "py_class":"Port"
       },
       "8df10e20120c430eabbed56aff4fce2f":{
          "id":"8df10e20120c430eabbed56aff4fce2f",
@@ -172,7 +172,7 @@
          "connector_type":"-",
          "label":"",
          "changed":true,
-         "class":"Connector"
+         "py_class":"Connector"
       }
    }
 }
